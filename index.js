@@ -12,7 +12,7 @@ class Formatter {
     let arr = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     let sa = s.split(" ")
     let result = sa.map(el =>{ 
-      if (arr.find(e=> e === el){
+      if (arr.find(e=> e === el)){
         return el
       }
       return this.capitalize(el)

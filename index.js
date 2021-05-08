@@ -19,7 +19,7 @@ class Formatter {
        
       })
       
-  }
+  }}
 
   //   return s.replace(/\b[^of,the]+/gi, function(l){ 
   //     console.log(l) 

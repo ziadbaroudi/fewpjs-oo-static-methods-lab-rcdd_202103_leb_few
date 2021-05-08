@@ -17,7 +17,7 @@ class Formatter {
       }
       return this.capitalize(el)
        
-      })
+      }))
       
   }
 

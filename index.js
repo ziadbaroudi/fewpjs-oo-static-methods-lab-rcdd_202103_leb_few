@@ -14,8 +14,8 @@ class Formatter {
     let result = sa.map(el =>{ 
       if (arr.find(e=> e === el){
         return el
-        
       }
+      return this.capitalize(el)
        
       })
       

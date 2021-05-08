@@ -18,7 +18,7 @@ class Formatter {
       return this.capitalize(el)
        
       })
-      
+      return result.join("")
   }}
 
   //   return s.replace(/\b[^of,the]+/gi, function(l){ 

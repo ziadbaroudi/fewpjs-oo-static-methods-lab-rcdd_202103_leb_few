@@ -9,9 +9,23 @@ class Formatter {
   }
 
   static titleize (s){
-    return s.replace(/\b\w[^aanbutandforatbyfromtheof]+/gi, function(l){ return l.charAt(0).toUpperCase() + l.slice(1) })
+    let arr = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
+    let sa = s.split(" ")
+    for(let i=0 ; i<arr.length ; i++){
+      
+      for (let j = 0; j<sa.length;j++){
+        if(sa[j] !== arr[i]){
+          this.capitalize(sa[j])
+          console.log(arr[i])
+          // console.log(sa[j])
+        }
+      }
+    }
+    return sa.join("")
   }
 }
-
-
+  //   return s.replace(/\b[^of,the]+/gi, function(l){ 
+  //     console.log(l) 
+  //     return l.charAt(0).toUpperCase() + l.slice(1)  })
+  // }
 
